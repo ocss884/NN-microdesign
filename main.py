@@ -19,7 +19,7 @@ device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 STIFF_MTX = np.genfromtxt('./data/stiffness.csv', delimiter=',')
 VOL = np.genfromtxt('./data/volumefraction.csv', delimiter=',')
 lamda = ((np.ones((6,6))+np.eye(6))/2).reshape(-1)
-# MSE weight
+# WMSE weight
 W = torch.Tensor(lamda@STIFF_MTX/(min(lamda@STIFF_MTX))).to(device)
 
 g = torch.Generator()
