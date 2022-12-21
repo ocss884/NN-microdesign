@@ -22,6 +22,7 @@ lamda = ((np.ones((6,6))+np.eye(6))/2).reshape(-1)
 # WMSE weight
 W = torch.Tensor(lamda@STIFF_MTX/(min(lamda@STIFF_MTX))).to(device)
 
+# seed generator
 g = torch.Generator()
 g.manual_seed(0)
 
