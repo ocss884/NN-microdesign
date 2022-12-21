@@ -1,6 +1,6 @@
 # Neural Network Accelerated Process Design of Polycrystalline Microstructures
 
-This repository provides code to model microstructure deformation.
+This repository provides code to model microstructure deformation. The main idea is given pairs of ODFs before and after deformations, model the behavior of latent deformation differential equations that governs the deformation process.
 
 ## Requirements
 - Python == 3.8.5
